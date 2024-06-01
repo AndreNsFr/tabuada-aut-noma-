@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taboada</title>
+    <style>
+        body {
+            background-color: #D0C2B0;
+            display: grid;
+            place-items: center;
+            height: 98vh;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        section {
+
+            background-color: #303440;
+            width: 600px;
+            height: 70vh;
+            border: 10px solid #6B4945;
+            border-radius: 15px ;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.863);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+
+        }
+
+        input{ 
+            height: 40px;
+            width: 300px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            padding-left: 15px;
+            background-color: rgba(255, 255, 255, 0.774);
+        }
+        button {
+            background-color: rgba(255, 255, 255, 0.774);
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            
+        }
+
+        button:active{
+            background-color: rgba(161, 161, 161, 0.774);
+            transition: 0.2s ;
+        }
+
+        
+
+        footer {
+            font-weight: 600;
+        }
+        #resposta{
+            background-color: #E89275;
+            width: 300px;
+            height: 385px;
+            font-weight: 600;
+            flex-wrap: wrap;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 1px;
+            border-radius: 8px;
+            
+        }
+
+        .respostas{
+            margin: 10px;
+        }
+
+        h1{
+            font-size: 30pt;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header > <h1>calculadora de taboada</h1> </header>
+
+    <section>
+        
+        <div id="num"> 
+            <input type="text" id="numero" placeholder=" digite um numero ">
+            <button id="verificar">calcular</button>
+        </div>
+        <div id="resposta" >
+            
+        </div>
+    
+    </section>
+
+    <footer> &copy; André do Nascimento Ferreira </footer>
+</body>
+<script src="script.js"></script>
+</html>
